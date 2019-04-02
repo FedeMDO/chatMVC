@@ -1,0 +1,84 @@
+﻿@page
+
+    <div class="container card rounded" style="padding: 30px; background-color: rgba(255, 255, 255, 0.7)">
+        <form>
+            <div class="group" data-toggle="tooltip" data-placement="left" data-animation="true" title="If you enter 'me' as name, the chat will align that messages to the right.">
+                <input id="userInput" type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col">
+                <!-- DIRECT CHAT PRIMARY -->
+                <div id="wholeBox" class="box box-primary direct-chat direct-chat-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Direct Chat</h3>
+
+                        <div class="box-tools pull-right">
+                            <a data-widget="collapse"
+                               onclick="$('#wholeBox').hasClass('collapsed-box') ? $('#wholeBox').removeClass('collapsed-box') : $('#wholeBox').addClass('collapsed-box');">
+                                <i class="far fa-window-minimize" style="margin-right: 15px"></i>
+                            </a>
+                            <a data-widget="remove"
+                               onclick="$('#chatbox').empty()">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <!-- Conversations are loaded here -->
+                        <div id="chatbox" class="direct-chat-messages ">
+                            <!-- Message. Default to the left -->
+                            <div class="direct-chat-msg">
+                                <div class="direct-chat-info clearfix">
+                                    <span class="direct-chat-name pull-left">Alexander Pierce</span>
+                                    <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                                </div>
+                                <!-- /.direct-chat-info -->
+                                <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_1.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                                <div class="direct-chat-text">
+                                    Is this template really for free? That's unbelievable!
+                                </div>
+                                <!-- /.direct-chat-text -->
+                            </div>
+                            <!-- /.direct-chat-msg -->
+                            <!-- Message to the right -->
+                            <div class="direct-chat-msg right">
+                                <div class="direct-chat-info clearfix">
+                                    <span class="direct-chat-name pull-right">Sarah Bullock</span>
+                                    <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                                </div>
+                                <!-- /.direct-chat-info -->
+                                <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                                <div class="direct-chat-text">
+                                    You better believe it!
+                                </div>
+                                <!-- /.direct-chat-text -->
+                            </div>
+                            <!-- /.direct-chat-msg -->
+                        </div>
+                        <!--/.direct-chat-messages-->
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <input id="messageInput" type="text" name="message" placeholder="Type Message ..." class="form-control input-group-text text-left rounded-pill" style="height:inherit; margin:5px">
+                                <span class="input-group-btn">
+                                    <button type="submit" id="sendButton" class="btn btn-primary rounded-pill">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box-footer-->
+                </div>
+                <!--/.direct-chat -->
+            </div>
+        </div>
+    </div>
+<audio id="audio">
+    <source src="~/audio/open-ended.ogg" type="audio/ogg" />
+</audio>
