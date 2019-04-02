@@ -31,7 +31,7 @@ You got it!
 
 ## Overview
 
-Here you have a screenshot of the layout of the chatbox.
+Here you have a screenshot of the chat box layout.
 
 ```
 https://drive.google.com/file/d/14yfJB3iWhDn1j1a9ix9nlY-QwqDshsOZ/view?usp=sharing
