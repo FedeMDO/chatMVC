@@ -37,14 +37,6 @@ Here you have a screenshot of the chat box layout.
 https://drive.google.com/file/d/14yfJB3iWhDn1j1a9ix9nlY-QwqDshsOZ/view?usp=sharing
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 As an ASP.NET Core app, you could deploy it on Linux, macOS and Windows platforms. 
